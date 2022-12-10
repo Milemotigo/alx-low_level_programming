@@ -5,7 +5,7 @@
 
 /*betty style doc for function main goes there*/
 /**
- * main - Entry point
+ * main - main function to generate a random number
  *
  *Return:Always 0 (success)
  */
@@ -22,11 +22,11 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf(" %d is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	else if (n < 0)
 	{
-		printf(" %d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
