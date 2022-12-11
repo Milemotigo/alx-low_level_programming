@@ -1,19 +1,26 @@
 #include <stdio.h>
+
 /**
- *main - prints the alphabet in lowercase, and then in uppercas
- * Return:Always (0)
+ * main - betty
+ *
+ * Return:always 0 (Success)
  */
-int main(void)
+int main(void)
 {
-	char i;
-	for (i  =  'a'; i  <=  'z'; i++);
+	int a, b;
+
+	a = 97;
+	b = 65;
+	while (a < 123)
 	{
-		putchar(i);
+		putchar(a);
+		a++;
 	}
-	for (i =  'A'; i <=  'Z'; i++);
+	while (b < 91)
 	{
-		putchar(i);
+		putchar(b);
+		b++;
 	}
-	putchar('\n');
-	return (0);
+	putchar(10);
+	return (0);
 }
