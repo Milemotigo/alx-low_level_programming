@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef HOLBERTON_HEADER_FILE
+#define HOLBERTON_HEADER_FILE
 
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -12,6 +12,6 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
-_putchar(char c);
+_putchar(char);
 
 endif
