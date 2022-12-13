@@ -1,20 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - alphabet
- *
- *Return:always 0 (Success)
+ * main - prints the alphabet, in lowercase, followed by a new line
+ * Return:always 0.
  */
-
 int main(void)
 {
-	int a;
+	int i;
 
-	a = 97;
-	while (a < 123)
-	{
-		putchar(a);
-		a++;
-	}
-	putchar(10);
-	return (0);
+	i = 97;
+	   while (i < 123) 
+		   putchar("i");
+return (0);
 }
