@@ -3,12 +3,14 @@
  * main - prints the alphabet, in lowercase, followed by a new line
  * Return:always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+	char q;
 
-	i = 97;
-	   while (i < 123) 
-		   putchar("i");
-return (0);
+	for (q = 'a'; q <='z'; q++)
+	{
+		_putchar('q');
+		q++;
+	}
+	   _putchar('\n');
 }
