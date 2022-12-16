@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef H_HEADER
+#define H_HEADER
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
