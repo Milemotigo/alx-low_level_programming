@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print 14 rows and 10 columns
+ * print_most_numbers - prints from 0 to 9
  *
- * Return:  prints the numbers, from 0 to 9, followed by a new line
+ * Return:  prints zero
  */
 void print_most_numbers(void)
 {
@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		if (!( a == '2' || a == '4'))
+		if (!(a == '2' || a == '4'))
 
 		_putchar(a);
 	}
