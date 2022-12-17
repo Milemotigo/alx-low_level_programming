@@ -1,5 +1,4 @@
 include "main.h"
-
 /**
  * main - check the code
  *
@@ -7,6 +6,6 @@ include "main.h"
  */
 int main(void)
 {
-    jack_bauer();
+jack_bauer();
     return (0);
 }
