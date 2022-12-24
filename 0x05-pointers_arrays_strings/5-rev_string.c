@@ -9,7 +9,7 @@
  */
 void rev_string(char *s)
 {
-	int i=0, count = 0;
+	int i = 0, count = 0;
 	char first;
 
 	while (*s)
@@ -19,10 +19,10 @@ void rev_string(char *s)
 	}
 	for (i = 0; i < count; i++)
 		s--;
-	for(i=0; i < (count)/ 2; i++)
+	for (i = 0; i < (count) / 2; i++)
 	{
 		first = s[i];
-		s[i] = s[count - 1 -i];
+		s[i] = s[count - 1 - i];
 		s[count - 1 - i] = first;
 	}
 }
