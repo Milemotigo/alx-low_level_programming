@@ -3,12 +3,12 @@
  * _strncat - concatenates two strings
  * @dest: destination
  * @src: source
+ * @n:store the variables
  * Return: char
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int j;
-	int i;
+	int j, i;
 
 	j = 0;
 	while (dest[j] != '\0')
@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[j] = src[i];
 		i++;
-                j++;
+		j++;
 	}
 	dest[j] = '\0';
 	return (dest);
