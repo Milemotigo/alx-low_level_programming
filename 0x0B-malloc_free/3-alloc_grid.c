@@ -1,19 +1,4 @@
-abela12
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x0B-malloc_free/3-alloc_grid.c
-@abela12
-abela12 0x0B. C - malloc, free - Added
- 1 contributor
-43 lines (37 sloc)  756 Bytes
+
 #include "main.h"
 #include <stdlib.h>
 
