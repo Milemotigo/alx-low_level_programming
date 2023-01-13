@@ -3,7 +3,6 @@
 #include "main.h"
 
 /**
- *
  * _realloc - reallocates a memory block using malloc and free.
  *
  * @ptr: pointer to the memory previously allocated with a
@@ -22,8 +21,9 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *nptr;
+
 	unsigned int i;
-	
+
 	if (new_size == old_size)
 		return (ptr);
 	if ((new_size == 0) && (ptr != NULL))
