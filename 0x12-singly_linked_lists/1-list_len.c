@@ -19,7 +19,7 @@ size_t list_len(const list_t *h)
 			printf("[%d]\n", h->len);
 		}
 		count++;
-		h=h->next;
+		h = h->next;
 	}
 	return (count);
 }
