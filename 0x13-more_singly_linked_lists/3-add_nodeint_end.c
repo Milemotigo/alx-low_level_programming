@@ -4,7 +4,13 @@
 #include "lists.h"
 
 /**
+ * add_nodeint_end - a function that add a node to the end of listint_t
  *
+ * @head: this is a double pointer to the head of the linked list
+ *
+ * @n: The value that was assigned to the new node
+ *
+ * Return: address of the new node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
@@ -12,19 +18,18 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *current;
 
 	new = malloc(sizeof(listint_t));
+	current = *head;
 	if (new == NULL)
-	{
 		return (NULL);
-	}
-	new->next = NULL;
-	if (*head == NULL)
+	if (!(*head))
 	{
-		*head = new->next;
+		*head = new;
 		return (new);
 	}
-	while (current->next != NULL)
+	new->n = n;
+	new->next = NULL;
+	while (current->next)
 		current = current->next;
-		new->n = n;
-		current->next = new;
-		return(*head);
+	current->next = new;
+	return (new);
 }
