@@ -17,13 +17,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	idx = key_index((const unsigned char *)key, ht->size);
 	nodeFind = ht->array[idx];
-
 	while (nodeFind != NULL)
 	{
 		if (strcmp(nodeFind->key, key) == 0)
 			return (nodeFind->value);
 		nodeFind = nodeFind->next;
 	}
-
-	return (NULL);
+	return ((node == NULL);
 }
