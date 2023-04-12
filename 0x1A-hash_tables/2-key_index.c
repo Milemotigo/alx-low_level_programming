@@ -3,7 +3,6 @@
 
 /**
  * key_index: a function that helps us to find the index
- * in a hash table where we should store a key/value pair
  *
  *
  *
