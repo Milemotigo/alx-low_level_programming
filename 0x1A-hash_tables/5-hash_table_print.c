@@ -11,13 +11,13 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i = 0, speci = 0;
 
 	/*check if the table exist*/
-	if (ht == 0)
+	if (ht == NULL)
 		return;
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
-		for (; node != NULL; node = node->next)
+		for (node = 0; node != NULL; node = node->next)
 		{
 			if (speci == 1)
 			{
