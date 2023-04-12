@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 /**
- * hash_table_print: prints a hash table in a format
+ * hash_table_print - prints a hash table in a format
  *
- * ht: hash table to be printed
+ * @ht: hash table to be printed
  * Return: nothing
  */
 void hash_table_print(const hash_table_t *ht)
@@ -14,10 +14,10 @@ void hash_table_print(const hash_table_t *ht)
 	if (ht == 0)
 		return;
 	printf("{");
-	for(i = 0; i < ht->size; i++)
+	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
-		for(; node != NULL; node = node->next)
+		for (; node != NULL; node = node->next)
 		{
 			if (speci == 1)
 			{
