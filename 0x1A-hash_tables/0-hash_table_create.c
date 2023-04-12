@@ -22,8 +22,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (hash_t->array == NULL)
 	return (NULL);
 	while (i < size)
-	hash_t->array[i] = NULL;
-	i++;
+	{
+		hash_t->array[i] = NULL;
+		i++;
+	}
 	/*check if we are not out of the  memory*/
 	hash_t->size = size;
 	return (hash_t);
