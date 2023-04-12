@@ -20,8 +20,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while (nodeFind != NULL)
 	{
 		if (strcmp(nodeFind->key, key) == 0)
+		{
 			return (nodeFind->value);
+		}
 		nodeFind = nodeFind->next;
 	}
-	return (node == NULL);
+	return (NULL);
 }
