@@ -22,7 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	/* search for the position of the index for the key */
 	idx = key_index((const unsigned char *)key, ht->size);
 	/* make a new piece of memory to store the things we want to store*/
-	for (i = index; ht->array[i]; i++)
+	for (i = idx; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
