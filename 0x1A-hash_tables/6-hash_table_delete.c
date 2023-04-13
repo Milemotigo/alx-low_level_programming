@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_delete: a function that delete a hash table
+ * hash_table_delete - a function that delete a hash table
  *
- * ht: hash table to delete
+ * @ht: hash table to delete
  * Return: nothing
  */
 void hash_table_delete(hash_table_t *ht)
@@ -13,10 +13,10 @@ void hash_table_delete(hash_table_t *ht)
 
 	if (ht == NULL)
 		return;
-	node = ht->array[i];
-	for(i = 0; i < ht->size; i++)
+	for (i = 0; i < ht->size; i++)
 	{
-		while(node != NULL)
+		node = ht->array[i];
+		while (node != NULL)
 		{
 			/*copy the node*/
 			temp = node;
