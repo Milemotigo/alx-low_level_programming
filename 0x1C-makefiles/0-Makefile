@@ -1,5 +1,5 @@
 all: main.o school.o
-	gcc main.o school.o -o school
+	gcc -o main.o school.o output
 
 school.o main.o: school.c m.h
 	gcc -c school.c
