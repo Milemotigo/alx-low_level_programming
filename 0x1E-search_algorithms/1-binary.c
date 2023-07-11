@@ -11,4 +11,21 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
+	size_t i = 0;
+	int mid;
+
+	if (!array || size == 0)
+		return (-1);
+	while (i < size)
+	{
+		mid = size / 2;
+
+		if (value == array[mid])
+			return (mid);
+		else if (value > array[mid])
+			i += mid;
+		else
+			i -= mid;
+	}
+	return (-1);
 }
