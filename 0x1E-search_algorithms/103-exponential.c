@@ -63,11 +63,11 @@ int exponential_search(int *array, size_t size, int value)
 		return (-1);
 	while (bound < size && array[bound] < value)
 	{
-		printf("Value checked array[%lu] = [%d]\n", bound, array[bound]);
+		printf("Value checked array [%lu] = [%d]\n", bound, array[bound]);
 		bound *= 2;
 	}
 	if (bound >= size)
 		bound = size - 1;
-	printf("Value found between indexes[%lu] and [%lu]\n", bound / 2, bound);
+	printf("Value found between indexes [%lu] and [%lu]\n", bound / 2, bound);
 	return (binary_search_recursive(array, bound / 2, bound, value));
 }
