@@ -23,7 +23,7 @@ int recursion(int *array, int left, int right, int value)
 	{
 		printf("%d", array[i]);
 		if (i < right)
-			printf(",");
+			printf(", ");
 	}
 	printf("\n");
 	if (array[mid] > value)
