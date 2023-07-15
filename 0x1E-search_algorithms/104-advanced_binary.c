@@ -15,7 +15,7 @@ int recursion(int *array, int left, int right, int value)
 {
 	int mid, i;
 
-	if (left > right)
+	if (left > right || array == NULL)
 		return (-1);
 	mid = (left + right) / 2;
 	printf("Searching in array: ");
